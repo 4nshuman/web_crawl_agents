@@ -28,7 +28,7 @@ def append_file(path, data):
 
 #delete contents of a file
 def delete_file(path):
-    with file(path,"w") as fo:
+    with open(path,"w") as fo:
         pass
 
 #file to set
@@ -45,5 +45,3 @@ def set_to_file(links, file_name):
     for link in sorted(links):
         append_file(file_name, link)
 
-create_project_dir("something")
-create_data_files("something","something.com")
